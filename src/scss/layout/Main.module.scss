@@ -1,0 +1,76 @@
+#PrimaryContent {
+	margin-top: 55px;
+}
+
+.NewsContainer {
+	display: grid;
+	grid-template-columns: 1fr minmax(350px, auto);
+	column-gap: 30px;
+	margin-bottom: 72px;
+}
+
+
+.PrimaryArticle {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto;
+	row-gap: 20px;
+	column-gap: 30px;
+}
+
+.Title {
+	margin: 0;
+	font-size: 5.6rem;
+	font-weight: 800;
+	padding: 13px 0 6px
+}
+
+.BannerContainer {
+	grid-area: 1 / 1 / 2 / -1;
+}
+
+.Banner {	
+	width: 100%;
+}
+
+.ArticleBody {
+	padding-top: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.ArticleText {
+	color: var(--dark-grayish-blue);
+	font-weight: 400;	
+	line-height: 1.6;
+}
+
+.ArticleButton {
+	max-width: 185px;
+	padding: 17px 32.5px;
+	background-color: var(--soft-red);
+	color: var(--off-white);
+	font-weight: 700;
+	font-size: 1.4rem;
+	letter-spacing: 0.32rem;
+	border: none;
+	cursor: pointer;
+	transition-property: background-color, color;
+	transition-duration: .2s;
+
+	&:hover {
+		color: var(--white);
+		background-color: var(--very-dark-blue);
+	}
+}
+
+.NewsArticles {
+	background-color: var(--very-dark-blue);
+}
+
+.PopularsContainer {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 30px;
+}
