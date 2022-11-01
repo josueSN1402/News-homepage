@@ -1,0 +1,47 @@
+.NewHeader {
+	display: flex;
+	justify-content: space-between;
+
+	@media screen and (min-width: 600px) {
+		padding: 30px 0;
+	}
+	@media screen and (min-width: 1440px) {
+		padding: 89px 0;
+	}
+}
+
+.Logo {
+	@media screen and (max-width: 800px) {
+		height: 2.8rem;
+	}
+}
+
+.Navbar {
+	height: 100%;
+	display: flex;
+	gap: 37.8px;
+	align-items: center;
+
+	@media screen and (max-width: 800px) {
+		display: none;
+	}
+}
+
+.Navbar__items {
+	color: var(--dark-grayish-blue);
+	transition-property: color;
+	transition-duration: .1s;
+
+	&:hover {
+		color: var(--soft-red)
+	}
+}
+
+.IconMenu {
+	display: block;
+	cursor: pointer;
+
+	@media screen and (min-width: 800px) {
+		display: none;
+	}
+}

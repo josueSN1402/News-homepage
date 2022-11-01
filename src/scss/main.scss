@@ -1,34 +1,16 @@
 @import 'normalize.css';
+@import './abstracts/variables';
+@import './base/reset';
+@import './base/base';
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
+#root {
+	padding: 28px 16px 0px;
 
-:root {
-  /* Basic */
-  --black: hsla(0, 0%, 0%, 0.1);
-  --white: hsl(0, 0%, 100%);
-  /* Primary */
-  --soft-orange: hsl(35, 77%, 62%);
-  --soft-red: hsl(5, 85%, 63%);
-  /* Neutral */
-  --off-white: hsl(36, 100%, 99%);
-  --grayish-blue: hsl(233, 8%, 79%);
-  --dark-grayish-blue: hsl(236, 13%, 42%);
-  --very-dark-blue: hsl(240, 100%, 5%);
-  /* Font */
-  --font-primary: 'Inter', sans-serif;
-}
+	@media screen and (min-width: 600px) {
+		padding: 0 8%;
+	}
 
-html {
-  height: -webkit-fill-available;
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.5rem;
+	@media screen and (min-width: 1100px) {
+		padding: 0 11.5%;
+	}
 }
