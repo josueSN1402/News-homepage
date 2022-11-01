@@ -57,7 +57,8 @@
 	border: none;
 	cursor: pointer;
 	transition-property: background-color, color;
-	transition-duration: .2s;
+	transition-duration: .3s;
+	transition-timing-function: ease-out;
 
 	&:hover {
 		color: var(--white);
