@@ -1,4 +1,5 @@
 import MainNewsStyles from '../scss/components/MainNews.module.scss';
+import AsideNewsStyles from '../scss/components/AsideNews.module.scss';
 
 
 function PrimaryArticle(props) {
@@ -21,17 +22,30 @@ function PrimaryArticle(props) {
 
 function NewNews(props) {
 	return (
-		<div>
-			<h2>News</h2>
-		</div>
+		<article className={`${AsideNewsStyles.NewArticle} ${!!props.first ? `${AsideNewsStyles.NoBorder}` : ''}`}>
+			<a href='/' className={AsideNewsStyles.Title}>{props.title}</a>
+			<p className={AsideNewsStyles.Content}>{props.content}</p>
+		</article>
 	);
 }
 
-function AsideNews(props) {
+function AsideNews() {
 	return (
-		<aside className={MainNewsStyles.NewsArticles}>
-			<h2>News</h2>
-			<NewNews />
+		<aside className={AsideNewsStyles.NewsAside}>
+			<h2 href='/' className={AsideNewsStyles.AsideTitle}>News</h2>
+			<NewNews
+				title='Hydrogen VS Electric Cars'
+				content='Will hydrogen-fueled cars ever catch up to EVs?'
+				first={true}
+			/>
+			<NewNews
+				title='The Downsides of AI Artistry'
+				content='What are the possible adverse effects of on-demand AI image generation?'
+			/>
+			<NewNews
+				title='Is VC Funding Drying Up?'
+				content='Private funding by VS firms is down 50% YOY. We take a look at what that means.'
+			/>
 		</aside>
 	);
 }
