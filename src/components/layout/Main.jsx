@@ -1,8 +1,7 @@
-// import MainStyles from '../../scss/layout/Main.module.scss';
 import BannerDesktop from '../../assets/images/image-web-3-desktop.jpg';
 import BannerMobile from '../../assets/images/image-web-3-mobile.jpg';
 import { MainNews } from '../MainNews';
-import { PopularsNews } from '../PopularsNews';
+import { PopularNews } from '../PopularNews';
 
 function Main() {
 	return (
@@ -11,7 +10,7 @@ function Main() {
 				bannerDesktop={BannerDesktop}
 				bannerMobile={BannerMobile}
 			/>
-			<PopularsNews />
+			<PopularNews />
 		</main>
 	);
 }

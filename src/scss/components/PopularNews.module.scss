@@ -1,0 +1,44 @@
+.PopularsContainer {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 30px;
+}
+
+.PopularArticle {
+	display: grid;
+	grid-template-columns: 100px 1fr;
+	column-gap: 24px;
+
+	img {
+		width: 100px;
+	}
+}
+
+.Number {
+	margin: 0 0 14px;
+	color: var(--grayish-blue);
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 1;
+}
+
+.Title {
+	color: var(--very-dark-blue);
+	font-weight: 700;
+	font-size: 1.8rem;
+	line-height: 1.2;
+	transition-property: color;
+	transition-duration: .15s;
+
+	&:hover {
+		color: var(--soft-red);
+	}
+}
+
+.NewContent {
+	color: var(--dark-grayish-blue);
+	margin-top: 10px;
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 1.73;
+}

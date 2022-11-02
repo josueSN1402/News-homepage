@@ -1,7 +1,3 @@
-#PrimaryContent {
-	margin-top: 55px;
-}
-
 .NewsContainer {
 	display: grid;
 	grid-template-columns: 1fr minmax(350px, auto);
@@ -68,10 +64,4 @@
 
 .NewsArticles {
 	background-color: var(--very-dark-blue);
-}
-
-.PopularsContainer {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	column-gap: 30px;
 }
