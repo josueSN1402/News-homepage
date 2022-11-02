@@ -18,7 +18,7 @@ function Header() {
 			<a href='/'>
 				<img src={Logo} alt="W." className={HeaderStyles.Logo} />
 			</a>
-			<nav>
+			<nav className={HeaderStyles.NavbarContianer}>
 				<ul className={HeaderStyles.Navbar}>
 					<NavbarItem>Home</NavbarItem>
 					<NavbarItem>New</NavbarItem>
