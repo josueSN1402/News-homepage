@@ -1,4 +1,7 @@
 .AppContainer {
 	margin: 0 auto;
-	max-width: 1110px;
+	max-width: 600px;
+	@media screen and (min-width: 801px) {
+		max-width: 1110px;
+	}
 }

@@ -6,7 +6,7 @@ function PrimaryArticle(props) {
 	return (
 		<div className={MainNewsStyles.PrimaryArticle}>
 			<picture className={MainNewsStyles.BannerContainer}>
-				<source srcSet={props.bannerDesktop} media='(min-width: 600px)' />
+				<source srcSet={props.bannerDesktop} media='(min-width: 950px)' />
 				<img src={props.bannerMobile} alt="Banner" className={MainNewsStyles.Banner} />
 			</picture>
 			<h1 className={MainNewsStyles.Title}>{props.title}</h1>

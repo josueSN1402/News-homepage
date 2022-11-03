@@ -12,7 +12,7 @@
 }
 
 .Logo {
-	@media screen and (max-width: 800px) {
+	@media screen and (max-width: 801px) {
 		height: 2.8rem;
 	}
 }
@@ -38,7 +38,9 @@
 	transition-property: color;
 	transition-duration: .1s;
 
-	&:hover {
+	&:hover,
+	&:focus,
+	&:active {
 		color: var(--soft-red)
 	}
 }
@@ -47,7 +49,7 @@
 	display: block;
 	cursor: pointer;
 
-	@media screen and (min-width: 800px) {
+	@media screen and (min-width: 801px) {
 		display: none;
 	}
 }
