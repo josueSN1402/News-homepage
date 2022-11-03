@@ -4,15 +4,12 @@ import { MainNews } from '../MainNews';
 import { PopularNews } from '../PopularNews';
 
 function Main() {
-	return (
-		<main>
-			<MainNews
-				bannerDesktop={BannerDesktop}
-				bannerMobile={BannerMobile}
-			/>
-			<PopularNews />
-		</main>
-	);
+  return (
+    <main>
+      <MainNews bannerDesktop={BannerDesktop} bannerMobile={BannerMobile} />
+      <PopularNews />
+    </main>
+  );
 }
 
 export { Main };

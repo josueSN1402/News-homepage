@@ -1,93 +1,92 @@
 .NewsContainer {
-	display: grid;
-	grid-template-rows: 1fr auto;
-	grid-template-columns: auto;
-	column-gap: 30px;
-	margin-bottom: 60px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: auto;
+  column-gap: 30px;
+  margin-bottom: 60px;
 
-	@media screen and (min-width: 800px) {
-		grid-template-columns: 1fr 280px;
-		grid-template-rows: auto;
-		margin-bottom: 72px;
-	}
-	@media screen and (min-width: 950px) {
-		grid-template-columns: 1fr 350px;
-		grid-template-rows: auto;
-	}
+  @media screen and (min-width: 800px) {
+    grid-template-columns: 1fr 280px;
+    grid-template-rows: auto;
+    margin-bottom: 72px;
+  }
+  @media screen and (min-width: 950px) {
+    grid-template-columns: 1fr 350px;
+    grid-template-rows: auto;
+  }
 }
 
-
 .PrimaryArticle {
-	display: grid;
-	grid-template-columns: auto;
-	grid-template-rows: 1fr auto auto;
-	row-gap: 20px;
-	column-gap: 30px;
-	@media screen and (min-width: 800px) and (max-width: 1120px) {
-		row-gap: 0px;
-	}
-	@media screen and (min-width: 1285px) {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: auto auto;
-	}
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr auto auto;
+  row-gap: 20px;
+  column-gap: 30px;
+  @media screen and (min-width: 800px) and (max-width: 1120px) {
+    row-gap: 0px;
+  }
+  @media screen and (min-width: 1285px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
 }
 
 .Title {
-	margin: 0;
-	font-size: 4rem;
-	font-weight: 800;
-	@media screen and (min-width: 800px) {
-		padding: 13px 0 6px;
-		font-size: 5.6rem;
-	}
+  margin: 0;
+  font-size: 4rem;
+  font-weight: 800;
+  @media screen and (min-width: 800px) {
+    padding: 13px 0 6px;
+    font-size: 5.6rem;
+  }
 }
 
 .BannerContainer {
-	grid-area: 1 / 1 / 2 / -1;
+  grid-area: 1 / 1 / 2 / -1;
 
-	@media screen and (min-width: 670px) {
-		grid-area: 1 / 1 / 2 / -1;
-	}
+  @media screen and (min-width: 670px) {
+    grid-area: 1 / 1 / 2 / -1;
+  }
 }
 
-.Banner {	
-	width: 100%;
+.Banner {
+  width: 100%;
 }
 
 .ArticleBody {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	row-gap: 30px;
-	@media screen and (min-width: 800px) {
-		padding-top: 10px;
-	}
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 30px;
+  @media screen and (min-width: 800px) {
+    padding-top: 10px;
+  }
 }
 
 .ArticleText {
-	color: var(--dark-grayish-blue);
-	font-weight: 400;	
-	line-height: 1.6;
+  color: var(--dark-grayish-blue);
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 .ArticleButton {
-	max-width: 185px;
-	padding: 17px 32.5px;
-	background-color: var(--soft-red);
-	color: var(--off-white);
-	font-weight: 700;
-	font-size: 1.4rem;
-	letter-spacing: 0.32rem;
-	border: none;
-	cursor: pointer;
-	transition-property: background-color, color;
-	transition-duration: .3s;
-	transition-timing-function: ease-out;
+  max-width: 185px;
+  padding: 17px 32.5px;
+  background-color: var(--soft-red);
+  color: var(--off-white);
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 0.32rem;
+  border: none;
+  cursor: pointer;
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
 
-	&:hover,
-	&:focus,
-	&:active {
-		color: var(--white);
-		background-color: var(--very-dark-blue);
-	}
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--white);
+    background-color: var(--very-dark-blue);
+  }
 }

@@ -1,53 +1,53 @@
 .PopularsContainer {
-	display: grid;
-	grid-template-columns: auto;
-	grid-template-rows: repeat(3, 1fr);
-	justify-content: center;
-	column-gap: 30px;
-	row-gap: 24px;
-	@media screen and (min-width: 800px) {
-		grid-template-columns: repeat(auto-fill, 328px);
-		grid-template-rows: auto;
-	}
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  column-gap: 30px;
+  row-gap: 24px;
+  @media screen and (min-width: 800px) {
+    grid-template-columns: repeat(auto-fill, 328px);
+    grid-template-rows: auto;
+  }
 }
 
 .PopularArticle {
-	display: grid;
-	grid-template-columns: 100px 1fr;
-	column-gap: 24px;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  column-gap: 24px;
 
-	img {
-		width: 100px;
-	}
+  img {
+    width: 100px;
+  }
 }
 
 .Number {
-	margin: 0 0 14px;
-	color: var(--grayish-blue);
-	font-weight: 700;
-	font-size: 30px;
-	line-height: 1;
+  margin: 0 0 14px;
+  color: var(--grayish-blue);
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1;
 }
 
 .Title {
-	color: var(--very-dark-blue);
-	font-weight: 700;
-	font-size: 1.8rem;
-	line-height: 1.2;
-	transition-property: color;
-	transition-duration: .15s;
+  color: var(--very-dark-blue);
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  transition-property: color;
+  transition-duration: 0.15s;
 
-	&:hover,
-	&:focus,
-	&:active {
-		color: var(--soft-red);
-	}
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--soft-red);
+  }
 }
 
 .NewContent {
-	color: var(--dark-grayish-blue);
-	margin-top: 10px;
-	font-weight: 400;
-	font-size: 1.5rem;
-	line-height: 1.73;
+  color: var(--dark-grayish-blue);
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.73;
 }

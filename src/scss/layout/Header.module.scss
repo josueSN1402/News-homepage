@@ -1,55 +1,55 @@
 .NewHeader {
-	display: flex;
-	justify-content: space-between;
-	padding: 28px 0 32px;
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 0 32px;
 
-	@media screen and (min-width: 600px) {
-		padding: 30px 0 55px;
-	}
-	@media screen and (min-width: 1440px) {
-		padding: 89px 0 55px;
-	}
+  @media screen and (min-width: 600px) {
+    padding: 30px 0 55px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding: 89px 0 55px;
+  }
 }
 
 .Logo {
-	@media screen and (max-width: 801px) {
-		height: 2.8rem;
-	}
+  @media screen and (max-width: 801px) {
+    height: 2.8rem;
+  }
 }
 
 .NavbarContianer {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .Navbar {
-	height: 100%;
-	display: flex;
-	gap: 37.8px;
-	align-items: center;
+  height: 100%;
+  display: flex;
+  gap: 37.8px;
+  align-items: center;
 
-	@media screen and (max-width: 800px) {
-		display: none;
-	}
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
 }
 
 .Navbar__items {
-	color: var(--dark-grayish-blue);
-	transition-property: color;
-	transition-duration: .1s;
+  color: var(--dark-grayish-blue);
+  transition-property: color;
+  transition-duration: 0.1s;
 
-	&:hover,
-	&:focus,
-	&:active {
-		color: var(--soft-red)
-	}
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--soft-red);
+  }
 }
 
 .IconMenu {
-	display: none;
-	cursor: pointer;
+  display: none;
+  cursor: pointer;
 
-	@media screen and (max-width: 800px) {
-		display: block;
-	}
+  @media screen and (max-width: 800px) {
+    display: block;
+  }
 }

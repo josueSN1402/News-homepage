@@ -1,90 +1,90 @@
 .MobileMenuContainer {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	min-height: 550px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 550px;
 }
 
 .MobileMenu {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 256px;
-	height: 100%;
-	background-color: var(--off-white);
-	padding: 145px 0 0 24px;
-	@media screen and (min-width: 500px) {
-		width: 320px;
-	}
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 256px;
+  height: 100%;
+  background-color: var(--off-white);
+  padding: 145px 0 0 24px;
+  @media screen and (min-width: 500px) {
+    width: 320px;
+  }
 }
 
 .IconClose {
-	position: absolute;
-	top: 32px;
-	right: 32px;
-	cursor: pointer;
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  cursor: pointer;
 }
 
 .Open {
-	animation-duration: .3s;
-	animation-name: open;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease-out;
+  animation-duration: 0.3s;
+  animation-name: open;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
 }
 
-.Close {	
-	animation-duration: .3s;
-	animation-name: close;
-	animation-fill-mode: forwards;
-	animation-timing-function: ease-out;
+.Close {
+  animation-duration: 0.3s;
+  animation-name: close;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
 }
 
 @keyframes open {
-	0% {
-		transform: translateX(100%);
-		background-color: hsla(240, 100%, 5%, 0);
-	}
-	70% {
-		background-color: hsla(240, 100%, 5%, .2);
-	}
-	100% {
-		transform: translateX(0);
-		background-color: hsla(240, 100%, 5%, .5);
-	}
+  0% {
+    transform: translateX(100%);
+    background-color: hsla(240, 100%, 5%, 0);
+  }
+  70% {
+    background-color: hsla(240, 100%, 5%, 0.2);
+  }
+  100% {
+    transform: translateX(0);
+    background-color: hsla(240, 100%, 5%, 0.5);
+  }
 }
 
 @keyframes close {
-	0% {
-		transform: translateX(0);
-		background-color: hsla(240, 100%, 5%, .5);
-	}
-	30% {
-		background-color: hsla(240, 100%, 5%, .2);
-	}
-	100% {
-		transform: translateX(100%);
-		background-color: hsla(240, 100%, 5%, 0);
-	}
+  0% {
+    transform: translateX(0);
+    background-color: hsla(240, 100%, 5%, 0.5);
+  }
+  30% {
+    background-color: hsla(240, 100%, 5%, 0.2);
+  }
+  100% {
+    transform: translateX(100%);
+    background-color: hsla(240, 100%, 5%, 0);
+  }
 }
 
 .MobileNavbar {
-	display: flex;
-	flex-direction: column;
-	row-gap: 26px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 26px;
 }
 
 .Navbar__items {
-	font-size: 1.8rem;
-	color: var(--very-dark-blue);
-	font-weight: 400;
-	transition-property: padding-left;
-	transition-duration: .2s;
+  font-size: 1.8rem;
+  color: var(--very-dark-blue);
+  font-weight: 400;
+  transition-property: padding-left;
+  transition-duration: 0.2s;
 
-	&:hover,
-	&:focus,
-	&:active {
-		padding-left: 5px;
-	}
+  &:hover,
+  &:focus,
+  &:active {
+    padding-left: 5px;
+  }
 }
