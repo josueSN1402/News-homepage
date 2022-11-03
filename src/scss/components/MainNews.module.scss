@@ -34,10 +34,11 @@
 
 .Title {
 	margin: 0;
-	font-size: 5.6rem;
+	font-size: 4rem;
 	font-weight: 800;
 	@media screen and (min-width: 800px) {
 		padding: 13px 0 6px;
+		font-size: 5.6rem;
 	}
 }
 
@@ -54,11 +55,13 @@
 }
 
 .ArticleBody {
-	padding-top: 10px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	row-gap: 30px;
+	@media screen and (min-width: 800px) {
+		padding-top: 10px;
+	}
 }
 
 .ArticleText {
