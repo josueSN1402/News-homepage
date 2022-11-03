@@ -1,0 +1,47 @@
+.MobileMenuContainer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: translateX(100%);
+	background-color: transparent;
+}
+
+.MobileMenu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 256px;
+	height: 100%;
+	background-color: var(--off-white);
+}
+
+.IconClose {
+	position: absolute;
+	top: 32px;
+	right: 32px;
+	cursor: pointer;
+}
+
+.Disable {
+	animation-duration: .3s;
+	animation-name: des;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+}
+
+@keyframes des {
+	0% {
+		transform: translateX(100%);
+		background-color: hsla(240, 100%, 5, 0);
+	}
+	70% {
+		// transform: translateX(10%);
+		background-color: hsla(240, 100%, 5, 20%);
+	}
+	100% {
+		transform: translateX(0);
+		background-color: hsla(240, 100%, 5, 50%);
+	}
+}
