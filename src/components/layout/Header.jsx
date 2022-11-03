@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import HeaderStyles from '../../scss/layout/Header.module.scss';
 import Logo from '../../assets/images/logo.svg';
 import IconMenu from '../../assets/images/icon-menu.svg';
@@ -19,14 +19,25 @@ function Header() {
 	const [open, setOpen] = useState(false);
 
 	function MobileMenu(status) {
+		const [statusValue, setStatusValue] = useState(open);
+
+		const close = () => {
+			setStatusValue(!statusValue);
+			setTimeout(() => setOpen(!open), 301);
+		}
+
 		return (
-			<div className={`${MobileMenuStyles.MobileMenuContainer}${open ? ` ${MobileMenuStyles.Disable}` : ''}`}>
+			<div
+				className={
+					`${MobileMenuStyles.MobileMenuContainer}${statusValue ? ` ${MobileMenuStyles.Open}` : ` ${MobileMenuStyles.Close}`}`
+				}
+			>
 				<div className={MobileMenuStyles.MobileMenu}>
 					<img
 						src={IconClose}
 						alt='Close'
 						className={MobileMenuStyles.IconClose}
-						onClick={()=> setOpen(!open)}
+						onClick={close}
 					/>
 				</div>
 			</div>
