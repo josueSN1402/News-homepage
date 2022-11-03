@@ -5,10 +5,13 @@ import IconMenu from '../../assets/images/icon-menu.svg';
 import MobileMenuStyles from '../../scss/components/MobileMenu.module.scss';
 import IconClose from '../../assets/images/icon-menu-close.svg';
 
-const NavbarItem = ({children}) => {
+const NavbarItem = ({mobile = false, children}) => {
 	return (
 		<li>
-			<a href='/' className={HeaderStyles.Navbar__items}>
+			<a
+				href='/'
+				className={`${HeaderStyles.Navbar__items} ${mobile ? `${MobileMenuStyles.Navbar__items}` : ''}`}
+			>
 				{children}
 			</a>
 		</li>
@@ -37,6 +40,13 @@ function Header() {
 						className={MobileMenuStyles.IconClose}
 						onClick={close}
 					/>
+					<ul className={MobileMenuStyles.MobileNavbar}>
+						<NavbarItem mobile={true}>Home</NavbarItem>
+						<NavbarItem mobile={true}>New</NavbarItem>
+						<NavbarItem mobile={true}>Popular</NavbarItem>
+						<NavbarItem mobile={true}>Trending</NavbarItem>
+						<NavbarItem mobile={true}>Categories</NavbarItem>
+					</ul>
 				</div>
 			</div>
 		);

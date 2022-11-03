@@ -14,6 +14,7 @@
 	width: 256px;
 	height: 100%;
 	background-color: var(--off-white);
+	padding: 145px 0 0 24px;
 	@media screen and (min-width: 500px) {
 		width: 320px;
 	}
@@ -65,5 +66,25 @@
 	100% {
 		transform: translateX(100%);
 		background-color: hsla(240, 100%, 5%, 0);
+	}
+}
+
+.MobileNavbar {
+	display: flex;
+	flex-direction: column;
+	row-gap: 26px;
+}
+
+.Navbar__items {
+	font-size: 1.8rem;
+	color: var(--very-dark-blue);
+	font-weight: 400;
+	transition-property: padding-left;
+	transition-duration: .2s;
+
+	&:hover,
+	&:focus,
+	&:active {
+		padding-left: 5px;
 	}
 }
