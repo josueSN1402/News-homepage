@@ -34,14 +34,14 @@
 @keyframes des {
 	0% {
 		transform: translateX(100%);
-		background-color: hsla(240, 100%, 5, 0);
+		background-color: hsla(240, 100%, 5%, 0);
 	}
 	70% {
 		// transform: translateX(10%);
-		background-color: hsla(240, 100%, 5, 20%);
+		background-color: hsla(240, 100%, 5%, .2);
 	}
 	100% {
 		transform: translateX(0);
-		background-color: hsla(240, 100%, 5, 50%);
+		background-color: hsla(240, 100%, 5%, .5);
 	}
 }
