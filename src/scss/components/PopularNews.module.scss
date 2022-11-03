@@ -1,7 +1,14 @@
 .PopularsContainer {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: auto;
+	grid-template-rows: repeat(3, 1fr);
+	justify-content: center;
 	column-gap: 30px;
+	row-gap: 24px;
+	@media screen and (min-width: 800px) {
+		grid-template-columns: repeat(auto-fill, 328px);
+		grid-template-rows: auto;
+	}
 }
 
 .PopularArticle {
@@ -30,7 +37,9 @@
 	transition-property: color;
 	transition-duration: .15s;
 
-	&:hover {
+	&:hover,
+	&:focus,
+	&:active {
 		color: var(--soft-red);
 	}
 }

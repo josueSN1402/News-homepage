@@ -3,11 +3,12 @@
 	grid-template-rows: 1fr auto;
 	grid-template-columns: auto;
 	column-gap: 30px;
-	margin-bottom: 72px;
+	margin-bottom: 60px;
 
 	@media screen and (min-width: 800px) {
 		grid-template-columns: 1fr 280px;
 		grid-template-rows: auto;
+		margin-bottom: 72px;
 	}
 	@media screen and (min-width: 950px) {
 		grid-template-columns: 1fr 350px;

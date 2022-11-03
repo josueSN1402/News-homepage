@@ -2,6 +2,10 @@ import HeaderStyles from '../../scss/layout/Header.module.scss';
 import Logo from '../../assets/images/logo.svg';
 import IconMenu from '../../assets/images/icon-menu.svg';
 
+const openMenu = () => {
+	
+}
+
 const NavbarItem = ({children}) => {
 	return (
 		<li>
@@ -31,6 +35,7 @@ function Header() {
 					className={HeaderStyles.IconMenu}
 					aria-label='Open Menu'
 					alt="Icon menu"
+					onClick={openMenu}
 				/>
 			</nav>
 		</header>
