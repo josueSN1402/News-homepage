@@ -46,10 +46,10 @@
 }
 
 .IconMenu {
-	display: block;
+	display: none;
 	cursor: pointer;
 
-	@media screen and (min-width: 801px) {
-		display: none;
+	@media screen and (max-width: 800px) {
+		display: block;
 	}
 }

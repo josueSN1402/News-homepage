@@ -17,21 +17,19 @@ const NavbarItem = ({children}) => {
 
 function Header() {
 	const [open, setOpen] = useState(false);
+	const [screenWidth, setScreenWidth] = useState(window.innerWidth <= 800);
 
-	function MobileMenu(status) {
-		const [statusValue, setStatusValue] = useState(open);
+	function MobileMenu() {
+		const [statusValue, setStatusValue] = useState(open && screenWidth);
 
 		const close = () => {
 			setStatusValue(!statusValue);
 			setTimeout(() => setOpen(!open), 301);
 		}
+		const selectClass = `${statusValue ? ` ${MobileMenuStyles.Open}` : ` ${MobileMenuStyles.Close}`}`;
 
 		return (
-			<div
-				className={
-					`${MobileMenuStyles.MobileMenuContainer}${statusValue ? ` ${MobileMenuStyles.Open}` : ` ${MobileMenuStyles.Close}`}`
-				}
-			>
+			<div className={`${MobileMenuStyles.MobileMenuContainer}${selectClass}`}>
 				<div className={MobileMenuStyles.MobileMenu}>
 					<img
 						src={IconClose}
@@ -43,6 +41,18 @@ function Header() {
 			</div>
 		);
 	}
+
+	const resize = () => {
+		const width = window.innerWidth;
+		if(width <= 800) {
+			setScreenWidth(true);
+		} else {
+			setScreenWidth(false);
+			setOpen(false);
+		}
+	}
+
+	window.addEventListener('resize', resize);
 
 	return (
 		<>
@@ -67,7 +77,7 @@ function Header() {
 					/>
 				</nav>
 			</header>
-			{open && <MobileMenu status={open} />}
+			{(open && screenWidth) && <MobileMenu />}
 		</>
 	);
 }
