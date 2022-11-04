@@ -1,7 +1,7 @@
 import PopularNewsStyles from '../scss/components/PopularNews.module.scss';
-import retroPC from '../assets/images/image-retro-pcs.jpg';
-import topLaptops from '../assets/images/image-top-laptops.jpg';
-import gamingGrowth from '../assets/images/image-gaming-growth.jpg';
+import retroPC from '../assets/images/image-retro-pcs.webp';
+import topLaptops from '../assets/images/image-top-laptops.webp';
+import gamingGrowth from '../assets/images/image-gaming-growth.webp';
 
 function PopularArticle(props) {
   return (

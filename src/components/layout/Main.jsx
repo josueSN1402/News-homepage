@@ -1,5 +1,5 @@
-import BannerDesktop from '../../assets/images/image-web-3-desktop.jpg';
-import BannerMobile from '../../assets/images/image-web-3-mobile.jpg';
+import BannerDesktop from '../../assets/images/image-web-3-desktop.webp';
+import BannerMobile from '../../assets/images/image-web-3-mobile.webp';
 import { MainNews } from '../MainNews';
 import { PopularNews } from '../PopularNews';
 
