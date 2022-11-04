@@ -8,9 +8,11 @@ function PrimaryArticle(props) {
         <source srcSet={props.bannerDesktop} media='(min-width: 950px)' />
         <img
           src={props.bannerMobile}
-          alt='Banner'
           className={MainNewsStyles.Banner}
-           width='730' height='330'
+          alt='Banner'
+          loading='lazy'
+          width='730'
+          height='330'
         />
       </picture>
       <h1 className={MainNewsStyles.Title}>{props.title}</h1>
@@ -72,4 +74,4 @@ function MainNews(props) {
   );
 }
 
-export { MainNews };
+export default MainNews;

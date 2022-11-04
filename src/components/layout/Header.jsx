@@ -40,9 +40,12 @@ function Header() {
         <div className={MobileMenuStyles.MobileMenu}>
           <img
             src={IconClose}
-            alt='Close'
+            alt='Close menu'
             className={MobileMenuStyles.IconClose}
             onClick={close}
+            width='32'
+            height='32'
+            loading='eager'
           />
           <ul className={MobileMenuStyles.MobileNavbar}>
             <NavbarItem mobile={true}>Home</NavbarItem>
@@ -78,6 +81,7 @@ function Header() {
           	className={HeaderStyles.Logo}
             width='65'
             height='40'
+            loading='eager'
           />
         </a>
         <nav className={HeaderStyles.NavbarContianer}>
@@ -94,6 +98,9 @@ function Header() {
             aria-label='Open Menu'
             alt='Icon menu'
             onClick={() => setOpen(!open)}
+            width='40'
+            height='17'
+            loading='eager'
           />
         </nav>
       </header>
@@ -102,4 +109,4 @@ function Header() {
   );
 }
 
-export { Header };
+export default Header;

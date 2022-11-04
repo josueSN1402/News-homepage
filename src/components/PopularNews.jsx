@@ -6,7 +6,7 @@ import gamingGrowth from '../assets/images/image-gaming-growth.webp';
 function PopularArticle(props) {
   return (
     <section className={PopularNewsStyles.PopularArticle}>
-      <img src={props.image} alt={props.alt} width='100' height='127' />
+      <img src={props.image} alt={props.alt} width='100' height='127' loading='lazy' />
       <div className={PopularNewsStyles.ArticleContent}>
         <h3 className={PopularNewsStyles.Number}>0{props.number}</h3>
         <a href='/' className={PopularNewsStyles.Title}>
@@ -46,4 +46,4 @@ function PopularNews() {
   );
 }
 
-export { PopularNews };
+export default PopularNews;
