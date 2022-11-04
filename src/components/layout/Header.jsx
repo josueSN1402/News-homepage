@@ -72,7 +72,13 @@ function Header() {
     <>
       <header className={HeaderStyles.NewHeader}>
         <a href='/'>
-          <img src={Logo} alt='W.' className={HeaderStyles.Logo} />
+          <img
+          	src={Logo}
+          	alt='W.'
+          	className={HeaderStyles.Logo}
+            width='65'
+            height='40'
+          />
         </a>
         <nav className={HeaderStyles.NavbarContianer}>
           <ul className={HeaderStyles.Navbar}>

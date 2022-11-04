@@ -10,6 +10,7 @@ function PrimaryArticle(props) {
           src={props.bannerMobile}
           alt='Banner'
           className={MainNewsStyles.Banner}
+           width='730' height='330'
         />
       </picture>
       <h1 className={MainNewsStyles.Title}>{props.title}</h1>
