@@ -9,8 +9,7 @@ function PrimaryArticle(props) {
         <img
           src={props.bannerMobile}
           className={MainNewsStyles.Banner}
-          alt='Banner'
-          loading='lazy'
+          alt=''
           width='730'
           height='330'
         />
