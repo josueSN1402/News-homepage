@@ -14,9 +14,13 @@ function PrimaryArticle(props) {
           height='330'
         />
       </picture>
-      <h1 className={MainNewsStyles.Title}>{props.title}</h1>
+      <h1 className={MainNewsStyles.Title} tabIndex={0}>
+        {props.title}
+      </h1>
       <div className={MainNewsStyles.ArticleBody}>
-        <p className={MainNewsStyles.ArticleText}>{props.content}</p>
+        <p className={MainNewsStyles.ArticleText} tabIndex={0}>
+          {props.content}
+        </p>
         <button className={MainNewsStyles.ArticleButton}>READ MORE</button>
       </div>
     </div>
@@ -33,7 +37,9 @@ function NewNews(props) {
       <a href='/' className={AsideNewsStyles.Title}>
         {props.title}
       </a>
-      <p className={AsideNewsStyles.Content}>{props.content}</p>
+      <p className={AsideNewsStyles.Content} tabIndex={0}>
+        {props.content}
+      </p>
     </article>
   );
 }
@@ -41,7 +47,9 @@ function NewNews(props) {
 function AsideNews() {
   return (
     <aside className={AsideNewsStyles.NewsAside}>
-      <h2 href='/' className={AsideNewsStyles.AsideTitle}>News</h2>
+      <h2 href='/' className={AsideNewsStyles.AsideTitle}>
+        News
+      </h2>
       <NewNews
         title='Hydrogen VS Electric Cars'
         content='Will hydrogen-fueled cars ever catch up to EVs?'

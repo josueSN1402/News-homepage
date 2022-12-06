@@ -6,13 +6,21 @@ import gamingGrowth from '../assets/images/image-gaming-growth.webp';
 function PopularArticle(props) {
   return (
     <section className={PopularNewsStyles.PopularArticle}>
-      <img src={props.image} alt={props.alt} width='100' height='127' loading='lazy' />
+      <img
+        src={props.image}
+        alt={props.alt}
+        width='100'
+        height='127'
+        loading='lazy'
+      />
       <div className={PopularNewsStyles.ArticleContent}>
         <h3 className={PopularNewsStyles.Number}>0{props.number}</h3>
         <a href='/' className={PopularNewsStyles.Title}>
           {props.title}
         </a>
-        <p className={PopularNewsStyles.NewContent}>{props.content}</p>
+        <p className={PopularNewsStyles.NewContent} tabIndex={0}>
+          {props.content}
+        </p>
       </div>
     </section>
   );
