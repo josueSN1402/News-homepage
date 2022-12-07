@@ -16,7 +16,8 @@
 .prettierignore
 
 design/*.jpg
-src/assets/fonts
+src/assets/fonts/*.woff2
+src/assets/fonts/*.txt
 notes.md
 
 README-template.md
