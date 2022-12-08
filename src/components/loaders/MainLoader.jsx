@@ -4,7 +4,7 @@ import 'react-loading-skeleton/dist/skeleton.css';
 import MainNewsStyles from '../../scss/components/MainNews.module.scss';
 import AsideNewsStyles from '../../scss/components/AsideNews.module.scss';
 
-import MainLoader from '../../scss/layout/MainLoader.module.scss';
+import MainLoaderStyles from '../../scss/layout/MainLoader.module.scss';
 
 const ArticleAside = ({ count }) => {
   const arr = Array(count).fill(1);
@@ -23,7 +23,7 @@ const ArticleAside = ({ count }) => {
   ));
 };
 
-const CardSkeleton = () => {
+const MainLoader = () => {
   return (
     <div className={MainNewsStyles.NewsContainer}>
       <div className={MainNewsStyles.PrimaryArticle}>
@@ -40,10 +40,10 @@ const CardSkeleton = () => {
             <Skeleton count={4} />
             <Skeleton width='80%' />
           </p>
-          <Skeleton className={MainLoader.ArticleButton} />
+          <Skeleton className={MainLoaderStyles.ArticleButton} />
         </div>
       </div>
-      <div className={MainLoader.NewsAside}>
+      <div className={MainLoaderStyles.NewsAside}>
         <h2 className={AsideNewsStyles.AsideTitle}>
           <Skeleton width='30%' />
         </h2>
@@ -53,4 +53,4 @@ const CardSkeleton = () => {
   );
 };
 
-export default CardSkeleton;
+export { MainLoader };
