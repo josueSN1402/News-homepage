@@ -3,7 +3,7 @@ import 'react-loading-skeleton/dist/skeleton.css';
 
 import HeaderStyles from '../../scss/layout/Header.module.scss';
 
-import HeaderLoaderStyles from '../../scss/layout/HeaderLoader.module.scss';
+import HeaderLoaderStyles from '../../scss/layout/loaders/HeaderLoader.module.scss';
 
 const HeaderLoader = () => {
   return (

@@ -1,7 +1,6 @@
 .NewsContainer {
   display: grid;
   grid-template-rows: 1fr auto;
-  grid-template-columns: auto;
   column-gap: 30px;
   margin-bottom: 60px;
 
@@ -12,7 +11,6 @@
   }
   @media screen and (min-width: 950px) {
     grid-template-columns: 1fr 350px;
-    grid-template-rows: auto;
   }
 }
 
@@ -34,7 +32,6 @@
 .Title {
   margin: 0;
   font-size: 4rem;
-  font-weight: 800;
   @media screen and (min-width: 800px) {
     padding: 13px 0 6px;
     font-size: 5.6rem;
@@ -47,7 +44,7 @@
 
 .Banner {
   width: 100%;
-  height: auto;
+  height: 300px;
 }
 
 .ArticleBody {
@@ -61,29 +58,34 @@
 }
 
 .ArticleText {
-  color: var(--dark-grayish-blue);
-  font-weight: 400;
   line-height: 1.6;
 }
 
 .ArticleButton {
   max-width: 185px;
   padding: 17px 32.5px;
-  background-color: var(--soft-red);
-  color: var(--off-white);
-  font-weight: 700;
-  font-size: 1.4rem;
-  letter-spacing: 0.32rem;
-  border: none;
-  cursor: pointer;
-  transition-property: background-color, color;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
+}
 
-  &:hover,
-  &:focus,
-  &:active {
-    color: var(--white);
-    background-color: var(--very-dark-blue);
+.NewsAside {
+  padding: 32px 24px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+  @media screen and (max-width: 799px) {
+    margin-top: 65px;
   }
 }
+
+.NewArticle {
+  padding: 30px 0 27px;
+}
+
+.AsideTitle {
+  margin: 0;
+}
+
+.Content {
+  margin-top: 9px;
+  line-height: 1.73;
+}
+

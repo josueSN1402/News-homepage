@@ -12,14 +12,10 @@ function App() {
   return (
     <div className={AppStyles.AppContainer}>
       <Suspense fallback={<HeaderLoader />}>
-        <SkeletonTheme baseColor='#d9d9d9'>
-          <Header />
-        </SkeletonTheme>
+        <Header />
       </Suspense>
       <Suspense fallback={<MainLoader />}>
-        <SkeletonTheme baseColor='#d9d9d9'>
-          <Main />
-        </SkeletonTheme>
+        <Main />
       </Suspense>
     </div>
   );

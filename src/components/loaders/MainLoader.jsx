@@ -1,22 +1,19 @@
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 
-import MainNewsStyles from '../../scss/components/MainNews.module.scss';
-import AsideNewsStyles from '../../scss/components/AsideNews.module.scss';
-
-import MainLoaderStyles from '../../scss/layout/MainLoader.module.scss';
+import MainLoaderStyles from '../../scss/layout/loaders/MainLoader.module.scss';
 
 const ArticleAside = ({ count }) => {
   const arr = Array(count).fill(1);
   return arr.map((article, i) => (
     <div
-      className={`${AsideNewsStyles.NewArticle} ${AsideNewsStyles.NoBorder}`}
+      className={MainLoaderStyles.NewArticle}
       key={i}
     >
-      <p className={AsideNewsStyles.Title}>
+      <p>
         <Skeleton height={22} />
       </p>
-      <p className={AsideNewsStyles.Content}>
+      <p className={MainLoaderStyles.Content}>
         <Skeleton count={2} height={15} />
       </p>
     </div>
@@ -25,18 +22,18 @@ const ArticleAside = ({ count }) => {
 
 const MainLoader = () => {
   return (
-    <div className={MainNewsStyles.NewsContainer}>
-      <div className={MainNewsStyles.PrimaryArticle}>
-        <div className={MainNewsStyles.BannerContainer}>
-          <Skeleton className={MainNewsStyles.Banner} height={330} />
+    <div className={MainLoaderStyles.NewsContainer}>
+      <div className={MainLoaderStyles.PrimaryArticle}>
+        <div className={MainLoaderStyles.BannerContainer}>
+          <Skeleton className={MainLoaderStyles.Banner} />
         </div>
-        <h1 className={MainNewsStyles.Title}>
+        <h1 className={MainLoaderStyles.Title}>
           <Skeleton width='90%' />
           <Skeleton />
           <Skeleton width='70%' />
         </h1>
-        <div className={MainNewsStyles.ArticleBody}>
-          <p className={MainNewsStyles.ArticleText}>
+        <div className={MainLoaderStyles.ArticleBody}>
+          <p className={MainLoaderStyles.ArticleText}>
             <Skeleton count={4} />
             <Skeleton width='80%' />
           </p>
@@ -44,7 +41,7 @@ const MainLoader = () => {
         </div>
       </div>
       <div className={MainLoaderStyles.NewsAside}>
-        <h2 className={AsideNewsStyles.AsideTitle}>
+        <h2 className={MainLoaderStyles.AsideTitle}>
           <Skeleton width='30%' />
         </h2>
         <ArticleAside count={3} />
