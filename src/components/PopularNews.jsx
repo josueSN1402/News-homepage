@@ -18,9 +18,9 @@ function PopularArticle(props) {
         <a href='/' className={PopularNewsStyles.Title}>
           {props.title}
         </a>
-        <p className={PopularNewsStyles.NewContent} tabIndex={0}>
+        <a href='/' className={PopularNewsStyles.NewContent} tabIndex={0}>
           {props.content}
-        </p>
+        </a>
       </div>
     </section>
   );

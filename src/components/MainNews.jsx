@@ -18,9 +18,9 @@ function PrimaryArticle(props) {
         {props.title}
       </h1>
       <div className={MainNewsStyles.ArticleBody}>
-        <p className={MainNewsStyles.ArticleText} tabIndex={0}>
+        <a href='/' className={MainNewsStyles.ArticleText} tabIndex={0}>
           {props.content}
-        </p>
+        </a>
         <button className={MainNewsStyles.ArticleButton}>READ MORE</button>
       </div>
     </div>
@@ -37,9 +37,9 @@ function NewNews(props) {
       <a href='/' className={AsideNewsStyles.Title}>
         {props.title}
       </a>
-      <p className={AsideNewsStyles.Content} tabIndex={0}>
+      <a href='/' className={AsideNewsStyles.Content} tabIndex={0}>
         {props.content}
-      </p>
+      </a>
     </article>
   );
 }
